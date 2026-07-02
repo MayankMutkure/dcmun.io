@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register | DCMUN 2026</title>
+  <meta name="description" content="Register for DCMUN 2026 Online Edition.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header solid">
+    <a class="brand" href="index.html"><span>DCMUN</span><small>Dialogue for Change</small></a>
+    <nav class="main-nav" aria-label="Primary navigation">
+      <a href="index.html">Intro</a>
+      <a href="dcmun-2026.html">2026 Edition</a>
+      <a href="secretariat.html">Secretariat</a>
+      <a href="register.html" aria-current="page">Register</a>
+    </nav>
+    <a class="nav-cta" href="#registration-form">Register</a>
+  </header>
+
+  <main class="subpage">
+    <section class="page-hero compact">
+      <p class="eyebrow">Registration</p>
+      <h1>Join DCMUN 2026 online.</h1>
+      <p>Registration is now handled directly on the DCMUN website. DCMUN 2026 is free and open to delegates ready to debate, learn, and lead.</p>
+      <a class="primary-button" href="#registration-form">Start registration</a>
+    </section>
+
+    <section class="registration-panel">
+      <div>
+        <p class="eyebrow dark">At A Glance</p>
+        <h2>Delegate registration details</h2>
+      </div>
+      <ul class="check-list">
+        <li>Free participation</li>
+        <li>Online edition</li>
+        <li>UNHRC committee</li>
+        <li>Beginner-friendly format</li>
+        <li>Certificates and awards</li>
+      </ul>
+    </section>
+
+    <section class="form-section" id="registration-form">
+      <div class="form-intro">
+        <p class="eyebrow dark">Delegate Form</p>
+        <h2>Register for DCMUN 2026</h2>
+        <p>Submit your details for the online UNHRC committee. After the Google Sheet connector is added, every registration will automatically appear in your spreadsheet.</p>
+      </div>
+
+      <form class="registration-form" data-registration-form>
+        <input type="hidden" name="conference" value="DCMUN 2026 Online Edition">
+        <input type="hidden" name="committee" value="UNHRC">
+
+        <label>
+          Full name
+          <input type="text" name="fullName" autocomplete="name" required>
+        </label>
+
+        <label>
+          Email address
+          <input type="email" name="email" autocomplete="email" required>
+        </label>
+
+        <label>
+          WhatsApp / phone number
+          <input type="tel" name="phone" autocomplete="tel" required>
+        </label>
+
+        <label>
+          School / institution
+          <input type="text" name="school" required>
+        </label>
+
+        <label>
+          Grade / year
+          <input type="text" name="grade" placeholder="Example: Grade 9" required>
+        </label>
+
+        <label>
+          Country
+          <input type="text" name="country" autocomplete="country-name" required>
+        </label>
+
+        <label>
+          MUN experience
+          <select name="experience" required>
+            <option value="">Select one</option>
+            <option>First-time delegate</option>
+            <option>1-2 conferences</option>
+            <option>3-5 conferences</option>
+            <option>More than 5 conferences</option>
+          </select>
+        </label>
+
+        <label>
+          Portfolio preferences
+          <textarea name="portfolioPreferences" rows="4" placeholder="List 3 country preferences for UNHRC." required></textarea>
+        </label>
+
+        <label class="wide">
+          Why do you want to join DCMUN?
+          <textarea name="motivation" rows="5" required></textarea>
+        </label>
+
+        <label class="consent wide">
+          <input type="checkbox" name="consent" value="Yes" required>
+          <span>I confirm that the information above is accurate and may be used by DCMUN for registration coordination.</span>
+        </label>
+
+        <button class="primary-button form-submit" type="submit">Submit registration</button>
+        <p class="form-status" data-form-status role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>DCMUN 2026</span>
+    <span>Dialogue for Change Model United Nations</span>
+    <a href="#registration-form">Register now</a>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
